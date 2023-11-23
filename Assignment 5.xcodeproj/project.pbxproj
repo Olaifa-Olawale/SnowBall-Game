@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC8AEBF22AFC48EC0097ADA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEBF12AFC48EC0097ADA0 /* main.cpp */; };
+		EC8AEC122AFC49700097ADA0 /* DisplayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEBF82AFC496F0097ADA0 /* DisplayList.cpp */; };
+		EC8AEC132AFC49700097ADA0 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEBFA2AFC496F0097ADA0 /* TextureManager.cpp */; };
+		EC8AEC142AFC49700097ADA0 /* TextureBmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEBFE2AFC496F0097ADA0 /* TextureBmp.cpp */; };
+		EC8AEC152AFC49700097ADA0 /* ObjModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEBFF2AFC496F0097ADA0 /* ObjModel.cpp */; };
+		EC8AEC162AFC49700097ADA0 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC002AFC496F0097ADA0 /* Texture.cpp */; };
+		EC8AEC172AFC49700097ADA0 /* ObjStringParsing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC032AFC496F0097ADA0 /* ObjStringParsing.cpp */; };
+		EC8AEC182AFC49700097ADA0 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC062AFC496F0097ADA0 /* Vector2.cpp */; };
+		EC8AEC192AFC49700097ADA0 /* SpriteFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC0D2AFC49700097ADA0 /* SpriteFont.cpp */; };
+		EC8AEC1A2AFC49700097ADA0 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC0E2AFC49700097ADA0 /* Vector3.cpp */; };
+		EC8AEC1B2AFC49700097ADA0 /* MtlLibraryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC0F2AFC49700097ADA0 /* MtlLibraryManager.cpp */; };
+		EC8AEC1C2AFC49700097ADA0 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC102AFC49700097ADA0 /* Material.cpp */; };
+		EC8AEC1D2AFC49700097ADA0 /* MtlLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC112AFC49700097ADA0 /* MtlLibrary.cpp */; };
+		EC8AEC382AFC4A0C0097ADA0 /* TimeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC1E2AFC4A0B0097ADA0 /* TimeManager.cpp */; };
+		EC8AEC392AFC4A0C0097ADA0 /* CollisonBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC202AFC4A0B0097ADA0 /* CollisonBox.cpp */; };
+		EC8AEC3A2AFC4A0C0097ADA0 /* SurfaceType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC212AFC4A0B0097ADA0 /* SurfaceType.cpp */; };
+		EC8AEC3B2AFC4A0C0097ADA0 /* BlockMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC222AFC4A0B0097ADA0 /* BlockMap.cpp */; };
+		EC8AEC3C2AFC4A0C0097ADA0 /* Heightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC232AFC4A0B0097ADA0 /* Heightmap.cpp */; };
+		EC8AEC3D2AFC4A0C0097ADA0 /* SnowBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC242AFC4A0B0097ADA0 /* SnowBall.cpp */; };
+		EC8AEC3E2AFC4A0C0097ADA0 /* Sleep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC292AFC4A0B0097ADA0 /* Sleep.cpp */; };
+		EC8AEC3F2AFC4A0C0097ADA0 /* SnowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC302AFC4A0C0097ADA0 /* SnowMap.cpp */; };
+		EC8AEC402AFC4A0C0097ADA0 /* Neighbourhood.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC312AFC4A0C0097ADA0 /* Neighbourhood.cpp */; };
+		EC8AEC412AFC4A0C0097ADA0 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC332AFC4A0C0097ADA0 /* Map.cpp */; };
+		EC8AEC422AFC4A0C0097ADA0 /* PerlinNoiseField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC352AFC4A0C0097ADA0 /* PerlinNoiseField.cpp */; };
+		EC8AEC432AFC4A0C0097ADA0 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC362AFC4A0C0097ADA0 /* Player.cpp */; };
+		EC8AEC462AFC4A440097ADA0 /* ConnectionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC8AEC442AFC4A440097ADA0 /* ConnectionGraph.cpp */; };
+		EC8AEC492AFC4AA40097ADA0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8AEC482AFC4AA40097ADA0 /* OpenGL.framework */; };
+		EC8AEC4B2AFC4AA90097ADA0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8AEC4A2AFC4AA90097ADA0 /* GLUT.framework */; };
+		ECAE5F562B048F2E009B115F /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECAE5F542B048F2E009B115F /* Path.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC8AEBEC2AFC48EC0097ADA0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC8AEBEE2AFC48EC0097ADA0 /* Assignment 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 5"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8AEBF12AFC48EC0097ADA0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EC8AEBF82AFC496F0097ADA0 /* DisplayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisplayList.cpp; path = ObjLibrary/DisplayList.cpp; sourceTree = "<group>"; };
+		EC8AEBF92AFC496F0097ADA0 /* ObjModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjModel.h; path = ObjLibrary/ObjModel.h; sourceTree = "<group>"; };
+		EC8AEBFA2AFC496F0097ADA0 /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextureManager.cpp; path = ObjLibrary/TextureManager.cpp; sourceTree = "<group>"; };
+		EC8AEBFB2AFC496F0097ADA0 /* ObjLibrary-development-log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ObjLibrary-development-log.txt"; path = "ObjLibrary/ObjLibrary-development-log.txt"; sourceTree = "<group>"; };
+		EC8AEBFC2AFC496F0097ADA0 /* MtlLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MtlLibrary.h; path = ObjLibrary/MtlLibrary.h; sourceTree = "<group>"; };
+		EC8AEBFD2AFC496F0097ADA0 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Material.h; path = ObjLibrary/Material.h; sourceTree = "<group>"; };
+		EC8AEBFE2AFC496F0097ADA0 /* TextureBmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextureBmp.cpp; path = ObjLibrary/TextureBmp.cpp; sourceTree = "<group>"; };
+		EC8AEBFF2AFC496F0097ADA0 /* ObjModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObjModel.cpp; path = ObjLibrary/ObjModel.cpp; sourceTree = "<group>"; };
+		EC8AEC002AFC496F0097ADA0 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Texture.cpp; path = ObjLibrary/Texture.cpp; sourceTree = "<group>"; };
+		EC8AEC012AFC496F0097ADA0 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ObjLibrary/Vector3.h; sourceTree = "<group>"; };
+		EC8AEC022AFC496F0097ADA0 /* ObjStringParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjStringParsing.h; path = ObjLibrary/ObjStringParsing.h; sourceTree = "<group>"; };
+		EC8AEC032AFC496F0097ADA0 /* ObjStringParsing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObjStringParsing.cpp; path = ObjLibrary/ObjStringParsing.cpp; sourceTree = "<group>"; };
+		EC8AEC042AFC496F0097ADA0 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = ObjLibrary/Texture.h; sourceTree = "<group>"; };
+		EC8AEC052AFC496F0097ADA0 /* ObjSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjSettings.h; path = ObjLibrary/ObjSettings.h; sourceTree = "<group>"; };
+		EC8AEC062AFC496F0097ADA0 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2.cpp; path = ObjLibrary/Vector2.cpp; sourceTree = "<group>"; };
+		EC8AEC072AFC496F0097ADA0 /* MtlLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MtlLibraryManager.h; path = ObjLibrary/MtlLibraryManager.h; sourceTree = "<group>"; };
+		EC8AEC082AFC496F0097ADA0 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ObjLibrary/Vector2.h; sourceTree = "<group>"; };
+		EC8AEC092AFC496F0097ADA0 /* SpriteFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteFont.h; path = ObjLibrary/SpriteFont.h; sourceTree = "<group>"; };
+		EC8AEC0A2AFC496F0097ADA0 /* TextureBmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureBmp.h; path = ObjLibrary/TextureBmp.h; sourceTree = "<group>"; };
+		EC8AEC0B2AFC496F0097ADA0 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureManager.h; path = ObjLibrary/TextureManager.h; sourceTree = "<group>"; };
+		EC8AEC0C2AFC496F0097ADA0 /* DisplayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayList.h; path = ObjLibrary/DisplayList.h; sourceTree = "<group>"; };
+		EC8AEC0D2AFC49700097ADA0 /* SpriteFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteFont.cpp; path = ObjLibrary/SpriteFont.cpp; sourceTree = "<group>"; };
+		EC8AEC0E2AFC49700097ADA0 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3.cpp; path = ObjLibrary/Vector3.cpp; sourceTree = "<group>"; };
+		EC8AEC0F2AFC49700097ADA0 /* MtlLibraryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MtlLibraryManager.cpp; path = ObjLibrary/MtlLibraryManager.cpp; sourceTree = "<group>"; };
+		EC8AEC102AFC49700097ADA0 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Material.cpp; path = ObjLibrary/Material.cpp; sourceTree = "<group>"; };
+		EC8AEC112AFC49700097ADA0 /* MtlLibrary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MtlLibrary.cpp; path = ObjLibrary/MtlLibrary.cpp; sourceTree = "<group>"; };
+		EC8AEC1E2AFC4A0B0097ADA0 /* TimeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeManager.cpp; sourceTree = "<group>"; };
+		EC8AEC1F2AFC4A0B0097ADA0 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		EC8AEC202AFC4A0B0097ADA0 /* CollisonBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisonBox.cpp; sourceTree = "<group>"; };
+		EC8AEC212AFC4A0B0097ADA0 /* SurfaceType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SurfaceType.cpp; sourceTree = "<group>"; };
+		EC8AEC222AFC4A0B0097ADA0 /* BlockMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockMap.cpp; sourceTree = "<group>"; };
+		EC8AEC232AFC4A0B0097ADA0 /* Heightmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Heightmap.cpp; sourceTree = "<group>"; };
+		EC8AEC242AFC4A0B0097ADA0 /* SnowBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SnowBall.cpp; sourceTree = "<group>"; };
+		EC8AEC252AFC4A0B0097ADA0 /* SnowBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowBall.h; sourceTree = "<group>"; };
+		EC8AEC262AFC4A0B0097ADA0 /* CollisonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisonBox.h; sourceTree = "<group>"; };
+		EC8AEC272AFC4A0B0097ADA0 /* Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sleep.h; sourceTree = "<group>"; };
+		EC8AEC282AFC4A0B0097ADA0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		EC8AEC292AFC4A0B0097ADA0 /* Sleep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sleep.cpp; sourceTree = "<group>"; };
+		EC8AEC2A2AFC4A0B0097ADA0 /* Neighbourhood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neighbourhood.h; sourceTree = "<group>"; };
+		EC8AEC2B2AFC4A0B0097ADA0 /* TimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManager.h; sourceTree = "<group>"; };
+		EC8AEC2C2AFC4A0B0097ADA0 /* SurfaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfaceType.h; sourceTree = "<group>"; };
+		EC8AEC2D2AFC4A0B0097ADA0 /* GetGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGlut.h; sourceTree = "<group>"; };
+		EC8AEC2E2AFC4A0B0097ADA0 /* BlockMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockMap.h; sourceTree = "<group>"; };
+		EC8AEC2F2AFC4A0B0097ADA0 /* SnowMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowMap.h; sourceTree = "<group>"; };
+		EC8AEC302AFC4A0C0097ADA0 /* SnowMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SnowMap.cpp; sourceTree = "<group>"; };
+		EC8AEC312AFC4A0C0097ADA0 /* Neighbourhood.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neighbourhood.cpp; sourceTree = "<group>"; };
+		EC8AEC322AFC4A0C0097ADA0 /* PerlinNoiseField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerlinNoiseField.h; sourceTree = "<group>"; };
+		EC8AEC332AFC4A0C0097ADA0 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		EC8AEC342AFC4A0C0097ADA0 /* Angles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angles.h; sourceTree = "<group>"; };
+		EC8AEC352AFC4A0C0097ADA0 /* PerlinNoiseField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerlinNoiseField.cpp; sourceTree = "<group>"; };
+		EC8AEC362AFC4A0C0097ADA0 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		EC8AEC372AFC4A0C0097ADA0 /* Heightmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heightmap.h; sourceTree = "<group>"; };
+		EC8AEC442AFC4A440097ADA0 /* ConnectionGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionGraph.cpp; sourceTree = "<group>"; };
+		EC8AEC452AFC4A440097ADA0 /* ConnectionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionGraph.h; sourceTree = "<group>"; };
+		EC8AEC482AFC4AA40097ADA0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EC8AEC4A2AFC4AA90097ADA0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		ECAE5F542B048F2E009B115F /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Path.cpp; sourceTree = "<group>"; };
+		ECAE5F552B048F2E009B115F /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC8AEBEB2AFC48EC0097ADA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8AEC4B2AFC4AA90097ADA0 /* GLUT.framework in Frameworks */,
+				EC8AEC492AFC4AA40097ADA0 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC8AEBE52AFC48EC0097ADA0 = {
+			isa = PBXGroup;
+			children = (
+				EC8AEBF02AFC48EC0097ADA0 /* Assignment 5 */,
+				EC8AEBEF2AFC48EC0097ADA0 /* Products */,
+				EC8AEC472AFC4AA40097ADA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8AEBEF2AFC48EC0097ADA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AEBEE2AFC48EC0097ADA0 /* Assignment 5 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8AEBF02AFC48EC0097ADA0 /* Assignment 5 */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE5F542B048F2E009B115F /* Path.cpp */,
+				ECAE5F552B048F2E009B115F /* Path.h */,
+				EC8AEBF12AFC48EC0097ADA0 /* main.cpp */,
+				EC8AEBF82AFC496F0097ADA0 /* DisplayList.cpp */,
+				EC8AEC0C2AFC496F0097ADA0 /* DisplayList.h */,
+				EC8AEC102AFC49700097ADA0 /* Material.cpp */,
+				EC8AEBFD2AFC496F0097ADA0 /* Material.h */,
+				EC8AEC112AFC49700097ADA0 /* MtlLibrary.cpp */,
+				EC8AEBFC2AFC496F0097ADA0 /* MtlLibrary.h */,
+				EC8AEC0F2AFC49700097ADA0 /* MtlLibraryManager.cpp */,
+				EC8AEC072AFC496F0097ADA0 /* MtlLibraryManager.h */,
+				EC8AEBFB2AFC496F0097ADA0 /* ObjLibrary-development-log.txt */,
+				EC8AEBFF2AFC496F0097ADA0 /* ObjModel.cpp */,
+				EC8AEBF92AFC496F0097ADA0 /* ObjModel.h */,
+				EC8AEC052AFC496F0097ADA0 /* ObjSettings.h */,
+				EC8AEC032AFC496F0097ADA0 /* ObjStringParsing.cpp */,
+				EC8AEC022AFC496F0097ADA0 /* ObjStringParsing.h */,
+				EC8AEC0D2AFC49700097ADA0 /* SpriteFont.cpp */,
+				EC8AEC342AFC4A0C0097ADA0 /* Angles.h */,
+				EC8AEC222AFC4A0B0097ADA0 /* BlockMap.cpp */,
+				EC8AEC2E2AFC4A0B0097ADA0 /* BlockMap.h */,
+				EC8AEC202AFC4A0B0097ADA0 /* CollisonBox.cpp */,
+				EC8AEC442AFC4A440097ADA0 /* ConnectionGraph.cpp */,
+				EC8AEC452AFC4A440097ADA0 /* ConnectionGraph.h */,
+				EC8AEC262AFC4A0B0097ADA0 /* CollisonBox.h */,
+				EC8AEC2D2AFC4A0B0097ADA0 /* GetGlut.h */,
+				EC8AEC232AFC4A0B0097ADA0 /* Heightmap.cpp */,
+				EC8AEC372AFC4A0C0097ADA0 /* Heightmap.h */,
+				EC8AEC332AFC4A0C0097ADA0 /* Map.cpp */,
+				EC8AEC1F2AFC4A0B0097ADA0 /* Map.h */,
+				EC8AEC312AFC4A0C0097ADA0 /* Neighbourhood.cpp */,
+				EC8AEC2A2AFC4A0B0097ADA0 /* Neighbourhood.h */,
+				EC8AEC352AFC4A0C0097ADA0 /* PerlinNoiseField.cpp */,
+				EC8AEC322AFC4A0C0097ADA0 /* PerlinNoiseField.h */,
+				EC8AEC362AFC4A0C0097ADA0 /* Player.cpp */,
+				EC8AEC282AFC4A0B0097ADA0 /* Player.h */,
+				EC8AEC292AFC4A0B0097ADA0 /* Sleep.cpp */,
+				EC8AEC272AFC4A0B0097ADA0 /* Sleep.h */,
+				EC8AEC242AFC4A0B0097ADA0 /* SnowBall.cpp */,
+				EC8AEC252AFC4A0B0097ADA0 /* SnowBall.h */,
+				EC8AEC302AFC4A0C0097ADA0 /* SnowMap.cpp */,
+				EC8AEC2F2AFC4A0B0097ADA0 /* SnowMap.h */,
+				EC8AEC212AFC4A0B0097ADA0 /* SurfaceType.cpp */,
+				EC8AEC2C2AFC4A0B0097ADA0 /* SurfaceType.h */,
+				EC8AEC1E2AFC4A0B0097ADA0 /* TimeManager.cpp */,
+				EC8AEC2B2AFC4A0B0097ADA0 /* TimeManager.h */,
+				EC8AEC092AFC496F0097ADA0 /* SpriteFont.h */,
+				EC8AEC002AFC496F0097ADA0 /* Texture.cpp */,
+				EC8AEC042AFC496F0097ADA0 /* Texture.h */,
+				EC8AEBFE2AFC496F0097ADA0 /* TextureBmp.cpp */,
+				EC8AEC0A2AFC496F0097ADA0 /* TextureBmp.h */,
+				EC8AEBFA2AFC496F0097ADA0 /* TextureManager.cpp */,
+				EC8AEC0B2AFC496F0097ADA0 /* TextureManager.h */,
+				EC8AEC062AFC496F0097ADA0 /* Vector2.cpp */,
+				EC8AEC082AFC496F0097ADA0 /* Vector2.h */,
+				EC8AEC0E2AFC49700097ADA0 /* Vector3.cpp */,
+				EC8AEC012AFC496F0097ADA0 /* Vector3.h */,
+			);
+			path = "Assignment 5";
+			sourceTree = "<group>";
+		};
+		EC8AEC472AFC4AA40097ADA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AEC4A2AFC4AA90097ADA0 /* GLUT.framework */,
+				EC8AEC482AFC4AA40097ADA0 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8AEBED2AFC48EC0097ADA0 /* Assignment 5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8AEBF52AFC48EC0097ADA0 /* Build configuration list for PBXNativeTarget "Assignment 5" */;
+			buildPhases = (
+				EC8AEBEA2AFC48EC0097ADA0 /* Sources */,
+				EC8AEBEB2AFC48EC0097ADA0 /* Frameworks */,
+				EC8AEBEC2AFC48EC0097ADA0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment 5";
+			productName = "Assignment 5";
+			productReference = EC8AEBEE2AFC48EC0097ADA0 /* Assignment 5 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8AEBE62AFC48EC0097ADA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EC8AEBED2AFC48EC0097ADA0 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EC8AEBE92AFC48EC0097ADA0 /* Build configuration list for PBXProject "Assignment 5" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8AEBE52AFC48EC0097ADA0;
+			productRefGroup = EC8AEBEF2AFC48EC0097ADA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8AEBED2AFC48EC0097ADA0 /* Assignment 5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC8AEBEA2AFC48EC0097ADA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAE5F562B048F2E009B115F /* Path.cpp in Sources */,
+				EC8AEC122AFC49700097ADA0 /* DisplayList.cpp in Sources */,
+				EC8AEC192AFC49700097ADA0 /* SpriteFont.cpp in Sources */,
+				EC8AEC462AFC4A440097ADA0 /* ConnectionGraph.cpp in Sources */,
+				EC8AEC182AFC49700097ADA0 /* Vector2.cpp in Sources */,
+				EC8AEBF22AFC48EC0097ADA0 /* main.cpp in Sources */,
+				EC8AEC392AFC4A0C0097ADA0 /* CollisonBox.cpp in Sources */,
+				EC8AEC132AFC49700097ADA0 /* TextureManager.cpp in Sources */,
+				EC8AEC3B2AFC4A0C0097ADA0 /* BlockMap.cpp in Sources */,
+				EC8AEC172AFC49700097ADA0 /* ObjStringParsing.cpp in Sources */,
+				EC8AEC1A2AFC49700097ADA0 /* Vector3.cpp in Sources */,
+				EC8AEC432AFC4A0C0097ADA0 /* Player.cpp in Sources */,
+				EC8AEC1B2AFC49700097ADA0 /* MtlLibraryManager.cpp in Sources */,
+				EC8AEC1C2AFC49700097ADA0 /* Material.cpp in Sources */,
+				EC8AEC3D2AFC4A0C0097ADA0 /* SnowBall.cpp in Sources */,
+				EC8AEC3F2AFC4A0C0097ADA0 /* SnowMap.cpp in Sources */,
+				EC8AEC412AFC4A0C0097ADA0 /* Map.cpp in Sources */,
+				EC8AEC162AFC49700097ADA0 /* Texture.cpp in Sources */,
+				EC8AEC3A2AFC4A0C0097ADA0 /* SurfaceType.cpp in Sources */,
+				EC8AEC3C2AFC4A0C0097ADA0 /* Heightmap.cpp in Sources */,
+				EC8AEC422AFC4A0C0097ADA0 /* PerlinNoiseField.cpp in Sources */,
+				EC8AEC3E2AFC4A0C0097ADA0 /* Sleep.cpp in Sources */,
+				EC8AEC402AFC4A0C0097ADA0 /* Neighbourhood.cpp in Sources */,
+				EC8AEC152AFC49700097ADA0 /* ObjModel.cpp in Sources */,
+				EC8AEC1D2AFC49700097ADA0 /* MtlLibrary.cpp in Sources */,
+				EC8AEC382AFC4A0C0097ADA0 /* TimeManager.cpp in Sources */,
+				EC8AEC142AFC49700097ADA0 /* TextureBmp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC8AEBF32AFC48EC0097ADA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC8AEBF42AFC48EC0097ADA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC8AEBF62AFC48EC0097ADA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/include/gl;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8AEBF72AFC48EC0097ADA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/include/gl;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC8AEBE92AFC48EC0097ADA0 /* Build configuration list for PBXProject "Assignment 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8AEBF32AFC48EC0097ADA0 /* Debug */,
+				EC8AEBF42AFC48EC0097ADA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8AEBF52AFC48EC0097ADA0 /* Build configuration list for PBXNativeTarget "Assignment 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8AEBF62AFC48EC0097ADA0 /* Debug */,
+				EC8AEBF72AFC48EC0097ADA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8AEBE62AFC48EC0097ADA0 /* Project object */;
+}

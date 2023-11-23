@@ -1,0 +1,52 @@
+winter1.bmp
+winter1.png
+	Adapted from 6 images in winter-skyboxes.zip\winter-skyboxes\IceRiver\
+	From https://opengameart.org/content/winter-skyboxes
+	From http://www.humus.name/index.php?page=Textures&start=88
+		Ice river
+	This is the work of Emil Persson, aka Humus.
+		http://www.humus.name
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+		http://creativecommons.org/licenses/by/3.0/
+
+
+icy1.jpg
+	https://www.goodtextures.com/cache/abb40c57/avcc09b6c4de5644dd14a.jpg
+icy2.jpg
+	https://www.goodtextures.com/cache/65a0a48d/av990e6082f9636ceb2d6.jpg
+icy3.jpg
+icy3.bmp
+	https://www.deviantart.com/siberiancrab/art/Seamless-Ice-Texture-433615850
+
+snow01.png
+snow1.bmp
+	https://opengameart.org/content/seamless-snow-texture-0
+snow2.jpg
+	https://www.goodtextures.com/image/13299/seamless-and-tileable-snow-ice-texture-13299
+snow3.jpg
+	https://www.goodtextures.com/image/13461/seamless-and-tileable-snow-ice-texture-13461
+
+crate1.bmp
+crate1.png
+	From crate1/crate1_diffuse.png in 3crates.zip
+	https://opengameart.org/content/3-crate-textures-w-bump-normal
+weighted_cube.bmp
+weighted_cube.png
+	https://www.deviantart.com/pseudospeed/art/2D-Aperture-Science-Weighted-Storage-Cube-321574663
+
+Player characters:
+	guard: converted from .mdl model provided with 3D GameStudio 5 example games
+	cbabe: converted from .mdl model provided with 3D GameStudio 6 example games
+	hiker_woman: https://www.cgtrader.com/free-3d-models/character/clothing/hiker-girl-base-mesh-model
+	ManCasual3: https://www.cgtrader.com/free-3d-models/character/man/low-poly-man-casual-clothes-3
+	WomanCasual3: https://www.cgtrader.com/free-3d-models/character/woman/low-poly-woman-casual-clothes-3
+
+snowball1.bmp
+snowball1.png
+	https://www.serebii.net/itemdex/sprites/snowball.png
+snowball2.bmp
+snowball2.png
+	https://www.serebii.net/itemdex/sprites/sv/snowball.png
+
+
+

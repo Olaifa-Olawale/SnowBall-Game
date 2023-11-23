@@ -1,0 +1,21 @@
+#
+#  blocks.mtl
+#
+
+newmtl crate
+illum 2
+Ka 0.40 0.40 0.40
+Kd 0.60 0.60 0.60
+Ks 0.20 0.20 0.20
+Ns 10.00
+map_Ka crate1.bmp
+map_Kd crate1.bmp
+
+newmtl weighted_cube
+illum 2
+Ka 0.40 0.40 0.40
+Kd 0.60 0.60 0.60
+Ks 0.20 0.20 0.20
+Ns 10.00
+map_Ka weighted_cube.bmp
+map_Kd weighted_cube.bmp
