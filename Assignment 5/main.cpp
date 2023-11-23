@@ -1415,7 +1415,7 @@ void makeOppSnowball()
     if (OppNumSnowballs < 1) {
        // Player is not moving and has fewer than 2 snowballs
        // Increment the progress by the sleep time once each frame
-        //cout<<"Making snowball in "<<OppSnowballProgress<<endl;
+        cout<<"Making snowball in "<<OppSnowballProgress<<endl;
        OppSnowballProgress += (1.0f / 60.0f); //  60 FPS, adjust as needed
        // Check if the progress reaches 3.0 seconds
        if (OppSnowballProgress >= 3.0f) {
@@ -1652,7 +1652,7 @@ void followPath(double max_speed, double factor_per_update) {
        
             opponent.accelerateToNode(max_speed, factor_per_update,new_second_node_position);
         //cout<<"f"<<FindSnowballNodes.size()<<endl;
-        //cout<<""<<ThrowSnowballNodes.size()<<endl;
+        cout<<""<<ThrowSnowballNodes.size()<<endl;
     
     }
         if(OpponentisOutside == true)
