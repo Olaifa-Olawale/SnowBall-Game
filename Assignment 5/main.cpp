@@ -84,7 +84,7 @@ void makeOppSnowball();
 void DrawProgressBar();
 void drawSnowballinPlayerHand(double hand_x, double hand_y, double hand_z);
 void drawSnowballinOppHand(double hand_x, double hand_y, double hand_z);
-//void throwSnowball();
+
 void PhysicsUpdate();//doGameUpdates
 void FrictionCheckPlayer();
 void FrictionCheckOppnent();
@@ -107,7 +107,7 @@ const string RESOURCE_DIRECTORY = "Resources/";
 DisplayList skybox_list;
 DisplayList ground_list;
 DisplayList block_list;
-//DisplayList player_list;
+
 DisplayList player_jump_list;
 DisplayList player_stand_list;
 DisplayList opponent_stand_list;
@@ -204,8 +204,6 @@ void init ()
     initDebugging();
     TimeManager();//init timemanager
     Snowball();
-    //map = Map(RESOURCE_DIRECTORY + "map_example.txt",
-    //map = Map(RESOURCE_DIRECTORY + "map_castle.txt",
     map = Map(RESOURCE_DIRECTORY + "map_maze.txt",
               block_list, RESOURCE_DIRECTORY + "snow1.bmp");
     player.reset(map.getPlayerStart(PLAYER_HALF_HEIGHT));
@@ -253,12 +251,6 @@ void initDebugging ()
     debugging_cube_show = CUBE_SHOW_LARGE;
     path_show = PATH_NOTHING;
 }
-//
-//void initShowPath ()
-//{
-//    is_path   = false;
-//    path_show = PATH_NOTHING;
-//}
 
 
 void initCollisionBoxes ()
@@ -542,7 +534,7 @@ void update ()
                 
                 AiUpdate();
                 PhysicsUpdate();
-              //  cout<<"Snowball with oppornet Collision"<<opponent.getPosition()<<endl;
+              
                 
             }
             timeManager.markNextUpdate();
@@ -555,7 +547,7 @@ void update ()
     }
     timeManager.sleepUntilNextUpdate();
     
-    //cout<<map.getPlayerSurfaceType(player_Box)<<endl;
+    
     // update your variables here
     
    // sleep(1.0 / 60.0);
@@ -692,9 +684,7 @@ void PhysicsUpdate()//doGameUpdates
     PlayerSnowball.SnowBallUpdate(timeManager.getUpdateDeltaTime());
     OppSnowball.SnowBallUpdate(timeManager.getUpdateDeltaTime());
      
-//    cout<<"X: "<<player.getPosition().x<<"   "<<snowball.getPosition().x<<" "<<snowball.getVelocity().x<<endl;
-//    cout<<"Y : "<<player.getPosition().y<<"   "<<snowball.getPosition().y<<" "<<snowball.getVelocity().y<<endl;
-    //snowball.drawSnowBox();
+
 }
 
 
@@ -735,17 +725,17 @@ void updateForKeyboard ()
     }
     if(key_pressed['S'])
     {
-        //player.addPosition(player.getForward() * -0.1);
+        
         player.accelerateToVelocity(maxSpeed,interFactor,-player.getForward());
     }
     if(key_pressed['A'])
     {
-        //player.addPosition(player.getRight() * -0.1);
+        
         player.accelerateToVelocity(maxSpeed,interFactor,-player.getRight());
     }
     if(key_pressed['D'])
     {
-        //player.addPosition(player.getRight() *  0.1);
+        
         player.accelerateToVelocity(maxSpeed,interFactor,player.getRight());
     }
     
@@ -1110,10 +1100,8 @@ void checkCollisions ()
     
     if (isCollision(player_Box, groundCollisionBox))
     {
-        //cout<<"say something"<<endl;
-        //boxes[i].is_colliding = true;
+    
         pushBox(player_Box, groundCollisionBox);
-        
         player.setPosition(player_Box.center);
     }
     
@@ -1164,10 +1152,10 @@ void checkCollisions ()
             PlayerSnowball.setPosition(Vector3(0,-999999,0));
         }
         
-//        if (isCollision(OppSnowball.snowBall_Box, BlockMap_Box[i]))
-//        {
-//            OppSnowball.setPosition(Vector3(0,-999999,0));
-//        }
+        if (isCollision(OppSnowball.snowBall_Box, BlockMap_Box[i]))
+        {
+            OppSnowball.setPosition(Vector3(0,-999999,0));
+        }
         
         
     }
@@ -1194,8 +1182,7 @@ void checkCollisions ()
     {
         if (isCollision(opponent_Box, BlockMap_Box[i]))
         {
-            //cout<<"say something"<<endl;
-            //boxes[i].is_colliding = true;
+
             if (pushBox(opponent_Box, BlockMap_Box[i]) == true) //vertically
             {
                 Vector3 dummy = opponent.getVelocity();
@@ -1212,15 +1199,6 @@ void checkCollisions ()
             opponent.setPosition(opponent_Box.center);
         }
     }
-    
-    
-//    if (isCollision(opponent_Box,player_Box))
-//    {
-//        PlayerSnowballProgress = 0.0f;
-//        pushBox(opponent_Box,player_Box);
-//        opponent.setPosition(opponent_Box.center);
-//    }
-//
     
     if (isCollision(OppSnowball.snowBall_Box, player_Box))
     {
@@ -1651,8 +1629,7 @@ void followPath(double max_speed, double factor_per_update) {
         }
        
             opponent.accelerateToNode(max_speed, factor_per_update,new_second_node_position);
-        //cout<<"f"<<FindSnowballNodes.size()<<endl;
-        //cout<<""<<ThrowSnowballNodes.size()<<endl;
+
     
     }
         if(OpponentisOutside == true)
@@ -1662,32 +1639,8 @@ void followPath(double max_speed, double factor_per_update) {
             dummy.z=static_cast<int>(floor(map.getSizeZ()/2));
             opponent.accelerateToNode(max_speed, factor_per_update,dummy);
         }
-   
-    
     
 }
 
-//bool makeOpponentThrowSnowball(const Player& player, Opponent& opponent, double max_speed)
-//{
-//    
-//}
-//double PitchCal(const Vector3& Thrower,const Vector3& Target, double max_speed )
-//{
-//    double x = opponent.getPosition().getDistanceXZ(player.getPosition());
-//    double y = player.getPosition().y-opponent.getPosition().y;
-//    double v = 15.0;
-//    double F = -9.8;
-//   // double tita = radiansToDegrees(opponent.getYawDegrees());
-////
-//    double A = pow(v,2);
-//    double B = pow(v,4);
-//    double C = 2 * y * A;
-//    double D = F * pow(x,2);
-//    double E = pow((B + (F * (C-D))),0.5);
-//    double G = A - E;
-//    double  H = G/(F*x);
-//    return  atan(H);
-//    
-//}
-//
+
 
