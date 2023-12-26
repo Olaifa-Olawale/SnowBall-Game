@@ -35,7 +35,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/favourolaifa-olawale/Documents/xcode/projects/CS 409/Assignment 5/Assignment 5"
+      customWorkingDirectory = "/Users/favourolaifa-olawale/Documents/xcode/projects/CS 409/SnowBall-Game/Assignment 5"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
