@@ -6,8 +6,9 @@ Welcome to the Snowball Fight Game! This game is a simple implementation of a sn
 # Table of Contents
 - Prerequisites
 - Features
--Controls
+- Controls
 - Gameplay
+- GameVideos
 
 
 # Prerequisites
@@ -52,3 +53,5 @@ Welcome to the Snowball Fight Game! This game is a simple implementation of a sn
 - Player Snowballs: Create snowballs when standing on snowy terrain.
 - Opponent AI: The opponent follows a path, makes snowballs on snowy terrian, and throws them on high points.
 - Terrain Types: Different terrain types (snow, block, ground) affect movement speed and snowball creation.
+
+# GameVideos
