@@ -55,3 +55,7 @@ Welcome to the Snowball Fight Game! This game is a simple implementation of a sn
 - Terrain Types: Different terrain types (snow, block, ground) affect movement speed and snowball creation.
 
 # GameVideos
+- " Links and Node.mp4 " shows how i connected the maps using Nodes and Links 
+- " Player Movment example.mp4 " shows the player movement and Opp. throwing snowballs 
+- " Opp. Path Finding.mp4 " shows how opponent navigates the map using path finding algorithm
+
