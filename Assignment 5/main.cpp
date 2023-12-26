@@ -463,7 +463,7 @@ void keyboard (unsigned char key, int x, int y)
         }
         break;
    }
-//   
+//   test
 
     key_pressed[key] = true;
 }
