@@ -24,9 +24,10 @@ Map :: Map ()
 		  block_list(),
 		  snow_map()
 {
-	assert(!isInitialized());
+	assert(!isInitialized());  // Ensure the map is initialized
 }
 
+// Constructor for Map with map filename, block display list, and snow texture filename
 Map :: Map (int size_x_in, int size_z_in,
             const DisplayList& block_display_list,
             const string& snow_texture_filename)
@@ -52,12 +53,13 @@ Map :: Map (const string& map_filename,
 }
 
 
-
+// Check if the map is initialized
 bool Map :: isInitialized () const
 {
 	return snow_map.isSetAll();
 }
 
+// Get size of the map in the X direction
 int Map :: getSizeX () const
 {
 	assert(isInitialized());
@@ -65,7 +67,7 @@ int Map :: getSizeX () const
 	assert(block_map.getSizeX() == snow_map.getSizeX());
 	return block_map.getSizeX();
 }
-
+// Get size of the map in the Z direction
 int Map :: getSizeZ () const
 {
 	assert(isInitialized());
@@ -74,6 +76,7 @@ int Map :: getSizeZ () const
 	return block_map.getSizeZ();
 }
 
+// Check if a position is within the map
 bool Map :: isInMap (int x, int z) const
 {
 	assert(isInitialized());
@@ -83,7 +86,7 @@ bool Map :: isInMap (int x, int z) const
 }
 
 
-
+// Get the block map
 const BlockMap& Map :: getBlockMap () const
 {
 	assert(isInitialized());
@@ -91,6 +94,7 @@ const BlockMap& Map :: getBlockMap () const
 	return block_map;
 }
 
+// Get the starting position for the player
 Vector3 Map :: getPlayerStart (double player_half_height) const
 {
 	assert(isInitialized());
@@ -98,6 +102,7 @@ Vector3 Map :: getPlayerStart (double player_half_height) const
 	return block_map.getPlayerStart(player_half_height);
 }
 
+// Get the starting position for the opponent
 Vector3 Map :: getOpponentStart (double player_half_height) const
 {
 	assert(isInitialized());
@@ -105,6 +110,7 @@ Vector3 Map :: getOpponentStart (double player_half_height) const
 	return block_map.getOpponentStart(player_half_height);
 }
 
+// Get the height of a block at a given position
 unsigned int Map :: getBlockHeight (int x, int z) const
 {
 	assert(isInitialized());
@@ -115,39 +121,42 @@ unsigned int Map :: getBlockHeight (int x, int z) const
 		return 0;
 }
 
+// Get the neighborhood of a given position
 Neighbourhood Map :: getNeighbourhood (int center_x, int center_z) const
 {
-	assert(isInitialized());
+	assert(isInitialized()); // Ensure the map is initialized
 
 	return Neighbourhood(block_map, center_x, center_z);
 }
 
+// Get the large noise field
 const PerlinNoiseField& Map :: getNoiseLarge () const
 {
-	assert(isInitialized());
+	assert(isInitialized());// Ensure the map is initialized
 
 	return noise_large;
 }
 
+// Get the small noise field
 const PerlinNoiseField& Map :: getNoiseSmall () const
 {
-	assert(isInitialized());
+	assert(isInitialized()); // Ensure the map is initialized
 
 	return noise_small;
 }
 
-const SnowMap& Map :: getSnowMap () const
+const SnowMap& Map :: getSnowMap () const // Get the snow map
 {
-	assert(isInitialized());
+	assert(isInitialized()); // Ensure the map is initialized
 
 	return snow_map;
 }
 
 
-
+// Draw blocks of the map
 void Map :: drawBlocks () const
 {
-	assert(isInitialized());
+	assert(isInitialized()); // Ensure the map is initialized
 
 	for(int x = 0; x < block_map.getSizeX(); x++)
 		for(int z = 0; z < block_map.getSizeZ(); z++)
@@ -158,17 +167,17 @@ void Map :: drawBlocks () const
 		}
 }
 
+// Draw snow around a given position
 void Map :: drawSnow (int center_x, int center_z,
                       int snow_radius) const
 {
-	assert(isInitialized());
-	assert(snow_radius >= 0);
-
+	assert(isInitialized()); // Ensure the map is initialized
+	assert(snow_radius >= 0);  // Ensure the snow radius is non-negative
 	snow_map.drawAround(center_x, center_z, snow_radius);
 }
 
 
-
+// Initialize the snow map
 void Map :: initSnowMap (const string& texture_filename)
 {
 	noise_large = PerlinNoiseField(2.8f, 0.6f,
@@ -185,13 +194,13 @@ void Map :: initSnowMap (const string& texture_filename)
 		{
 			assert(block_map.isInMap(x, z));
 			Vector3 offset = Vector3(x, block_map.getAt(x, z), z);
-
 			Heightmap heightmap = initSnowHeightmap(x, z);
 			heightmap.initDisplayList(offset, texture_filename);
 			snow_map.setAt(x, z, heightmap.getDisplayList());
 		}
 }
 
+// Initialize the snow heightmap at a given position
 Heightmap Map :: initSnowHeightmap (int base_x, int base_z)
 {
 	Neighbourhood neighbourhood(block_map, base_x, base_z);
@@ -209,6 +218,7 @@ Heightmap Map :: initSnowHeightmap (int base_x, int base_z)
 	return snow;
 }
 
+// Calculate the snow height at a given position
 float Map :: calculateSnowHeight (int base_x, int base_z,
                                   const Neighbourhood& neighbourhood,
                                   float x_frac, float z_frac) const
@@ -229,7 +239,7 @@ float Map :: calculateSnowHeight (int base_x, int base_z,
 }
 
 
-
+// Draw a block at a given position
 void Map :: drawBlock (int x, int y, int z) const
 {
 	glPushMatrix();
@@ -238,8 +248,7 @@ void Map :: drawBlock (int x, int y, int z) const
 	glPopMatrix();
 }
 
-
-
+// Check if there is snow at a given position
 bool Map :: hasSnowAtPosition(const Vector3& position)
 {
     // Convert world position to integer coordinates
@@ -261,19 +270,15 @@ bool Map :: hasSnowAtPosition(const Vector3& position)
     
     // Calculate the sum of heights
     float total_height = static_cast<float>(block_height) + snow_height_relative;
-   //cout<<snow_height_relative<<"  "<<total_height<<"  "<<block_height<<endl;
-    // Compare with the query position's Y-value
-     if(position.y< total_height)
-         return true;
-         
-         return false;
-    
 
+    // Compare with the query position's Y-value
+    if(position.y < total_height)
+        return true;
+    
+    return false;
 }
 
-
-
-
+// Determine the surface type at a given collision box
 surfacetype Map::getPlayerSurfaceType(const Box& collisionBox) {
     // Calculate the "feet" position at the center of the bottom of the box
     Vector3 feetPosition = collisionBox.center;
@@ -306,14 +311,12 @@ surfacetype Map::getPlayerSurfaceType(const Box& collisionBox) {
         }
     }
 }
-
-
-
+// Check if a node is high-ish
 bool Map::isHighIshNode(int x, int z) const
 {
-    // node is on top of at least one block (not on the ground)
+    // Node is on top of at least one block (not on the ground)
     if (getBlockHeight(x, z) > 0) {
-        //  none of the block's 8-neighbours are higher
+        // None of the block's 8-neighbours are higher
         for (int i = -1; i <= 1; ++i) {
             for (int j = -1; j <= 1; ++j) {
                 if (i == 0 && j == 0) continue;  // Skip the current node
@@ -321,10 +324,10 @@ bool Map::isHighIshNode(int x, int z) const
                 int neighborX = x + i;
                 int neighborZ = z + j;
 
-                // the neighbor is within bounds
+                // The neighbor is within bounds
                 if (neighborX >= 0 && neighborX < getSizeX() && neighborZ >= 0 && neighborZ < getSizeZ()) {
                     if (getBlockHeight(neighborX, neighborZ) > getBlockHeight(x, z)) {
-                        return false;  // if one of the neighbors is higher
+                        return false;  // If one of the neighbors is higher
                     }
                 }
             }
@@ -336,8 +339,8 @@ bool Map::isHighIshNode(int x, int z) const
     return false;  // Node is on the ground
 }
 
-
-vector  <ObjLibrary::Vector3>  Map :: findSnowballNodes()
+// Find snowball nodes for opponents
+vector<Vector3> Map :: findSnowballNodes()
 {
     std::vector<Vector3> opponentSnowballNodes;
     for (int x = 0; x < getSizeX(); ++x) {
@@ -357,10 +360,8 @@ vector  <ObjLibrary::Vector3>  Map :: findSnowballNodes()
     return opponentSnowballNodes;
 }
 
-
-
-
-vector  <ObjLibrary::Vector3>  Map::throwSnowballNodes()
+// Find nodes suitable for throwing snowballs
+vector<Vector3> Map::throwSnowballNodes()
 {
     std::vector<Vector3> ThrowNodes;
     
@@ -368,10 +369,10 @@ vector  <ObjLibrary::Vector3>  Map::throwSnowballNodes()
         for (int z = 0; z < getSizeZ(); ++z) {
             Vector3 node_position(x + 0.5f, 0.0f, z + 0.5f);  // 0.5 to find the center
 
-            // if the node has at least 0.2 m of snow below the block surface
+            // If the node has at least 0.2 m of snow below the block surface
             if (hasSnowAtPosition(node_position) >= 0.2f) {
 
-                //  if the node is high-ish
+                // If the node is high-ish
                 if (isHighIshNode(x, z)) {
                     ThrowNodes.push_back(node_position);
                 }
@@ -380,5 +381,4 @@ vector  <ObjLibrary::Vector3>  Map::throwSnowballNodes()
     }
     return ThrowNodes;
 }
-
 
